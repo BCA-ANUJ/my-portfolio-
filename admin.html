@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Manage Anuj Kumar's portfolio and contact messages.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Portfolio Admin | Anuj Kumar</title>
+    <link rel="stylesheet" href="style.css?v=20261025">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+<body class="admin-page">
+    <main class="admin-shell">
+        <section class="admin-login-card" id="adminLogin">
+            <a class="admin-brand" href="index.html">
+                <span class="logo">A<span>K</span></span>
+                <span><strong>Anuj Kumar</strong><small>PORTFOLIO ADMIN</small></span>
+            </a>
+            <p class="section-label">PRIVATE WORKSPACE</p>
+            <h1>Welcome back<span>.</span></h1>
+            <p class="tool-description">Sign in to manage your portfolio content and messages.</p>
+            <form class="admin-login-form" id="adminLoginForm">
+                <label for="adminUsername">Username</label>
+                <input id="adminUsername" name="username" autocomplete="username"
+                    maxlength="100" required>
+                <label for="adminPassword">Password</label>
+                <input id="adminPassword" name="password" type="password"
+                    autocomplete="current-password" required>
+                <button class="button dark" type="submit">Sign in <i class="fa-solid fa-arrow-right"></i></button>
+                <p class="admin-status" id="loginStatus" role="status" aria-live="polite"></p>
+            </form>
+            <a class="admin-back-link" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to portfolio</a>
+        </section>
+
+        <section class="admin-dashboard" id="adminDashboard" hidden>
+            <aside class="admin-sidebar">
+                <a class="admin-brand" href="index.html">
+                    <span class="logo">A<span>K</span></span>
+                    <span><strong>Anuj Kumar</strong><small>PORTFOLIO ADMIN</small></span>
+                </a>
+                <p class="admin-nav-label">WORKSPACE</p>
+                <nav class="admin-nav" aria-label="Admin sections">
+                    <button class="active" type="button" data-section="overview">
+                        <i class="fa-solid fa-chart-pie"></i> Overview
+                    </button>
+                    <button type="button" data-section="profile">
+                        <i class="fa-solid fa-user"></i> Profile & resume
+                    </button>
+                    <button type="button" data-section="projects">
+                        <i class="fa-solid fa-folder-open"></i> Projects
+                    </button>
+                    <button type="button" data-section="skills">
+                        <i class="fa-solid fa-layer-group"></i> Skills
+                    </button>
+                    <button type="button" data-section="journey">
+                        <i class="fa-solid fa-graduation-cap"></i> Education & goals
+                    </button>
+                    <button type="button" data-section="certifications">
+                        <i class="fa-solid fa-award"></i> Certifications
+                    </button>
+                    <button type="button" data-section="strengths">
+                        <i class="fa-solid fa-bolt"></i> Personal strengths
+                    </button>
+                    <button type="button" data-section="socials">
+                        <i class="fa-solid fa-share-nodes"></i> Social links
+                    </button>
+                    <button type="button" data-section="messages">
+                        <i class="fa-regular fa-envelope"></i> Messages
+                        <span class="admin-nav-count" id="messageNavCount">0</span>
+                    </button>
+                    <button type="button" data-section="feedback">
+                        <i class="fa-regular fa-star"></i> Website feedback
+                        <span class="admin-nav-count" id="feedbackNavCount">0</span>
+                    </button>
+                </nav>
+                <div class="admin-sidebar-bottom">
+                    <a href="index.html" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> View website
+                    </a>
+                    <button type="button" id="logoutButton">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign out
+                    </button>
+                </div>
+            </aside>
+
+            <div class="admin-main">
+                <header class="admin-topbar">
+                    <div>
+                        <p class="section-label">PORTFOLIO MANAGEMENT</p>
+                        <h1 id="adminPageTitle">Overview</h1>
+                    </div>
+                    <a class="admin-view-link" href="index.html" target="_blank" rel="noopener noreferrer">
+                        View website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </header>
+                <p class="admin-notice" id="adminNotice" role="status" aria-live="polite"></p>
+
+                <section class="admin-panel active" data-panel="overview">
+                    <div class="admin-welcome">
+                        <div>
+                            <span class="admin-eyebrow">YOUR CREATOR DASHBOARD</span>
+                            <h2>Your portfolio, <span>at a glance.</span></h2>
+                            <p>Manage the content visitors see and keep up with new enquiries.</p>
+                        </div>
+                        <div class="admin-welcome-icon"><i class="fa-solid fa-sparkles"></i></div>
+                    </div>
+                    <div class="admin-stat-grid">
+                        <article class="admin-stat-card">
+                            <span>Published projects</span>
+                            <strong id="projectStat">0</strong>
+                            <i class="fa-solid fa-folder-open"></i>
+                        </article>
+                        <article class="admin-stat-card">
+                            <span>Skills listed</span>
+                            <strong id="skillStat">0</strong>
+                            <i class="fa-solid fa-layer-group"></i>
+                        </article>
+                        <article class="admin-stat-card">
+                            <span>Inquiries & chats</span>
+                            <strong id="messageStat">0</strong>
+                            <i class="fa-regular fa-envelope"></i>
+                        </article>
+                        <article class="admin-stat-card">
+                            <span>Website ratings</span>
+                            <strong id="feedbackStat">0</strong>
+                            <i class="fa-regular fa-star"></i>
+                        </article>
+                    </div>
+                    <div class="admin-quick-card">
+                        <div>
+                            <h3>Keep your portfolio fresh</h3>
+                            <p>Update your introduction, add recent work, or reply to a new enquiry.</p>
+                        </div>
+                        <button class="button dark" type="button" data-go="profile">Edit profile <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </section>
+
+                <section class="admin-panel" data-panel="profile">
+                    <div class="admin-section-heading">
+                        <div><h2>Profile & resume</h2><p>Manage your website profile. The downloadable PDF remains the supplied resume file.</p></div>
+                    </div>
+                    <form class="admin-content-form" id="profileForm">
+                        <div class="admin-form-grid">
+                            <label>Display name<input name="name" maxlength="80" required></label>
+                            <label>Headline<input name="headline" maxlength="100" required></label>
+                            <label class="admin-field-full">Introduction
+                                <textarea name="tagline" rows="3" maxlength="240" required></textarea>
+                            </label>
+                            <label class="admin-field-full">Career objective
+                                <textarea name="objective" rows="4" maxlength="600" required></textarea>
+                            </label>
+                            <label>Email address<input name="email" type="email" maxlength="254" required></label>
+                            <label>Current location<input name="location" maxlength="100"></label>
+                            <label>Permanent location<input name="permanentLocation" maxlength="100"></label>
+                            <label>Contact section label<input name="eyebrow" maxlength="80" required></label>
+                            <label>Contact heading<input name="contactTitle" maxlength="180" required></label>
+                            <label class="admin-field-full">Contact description
+                                <textarea name="contactDescription" rows="3" maxlength="500" required></textarea>
+                            </label>
+                        </div>
+                        <button class="button dark" type="submit">Save changes <i class="fa-solid fa-check"></i></button>
+                    </form>
+                    <div class="admin-resume-card">
+                        <span class="admin-resume-icon"><i class="fa-solid fa-file-pdf"></i></span>
+                        <div>
+                            <h3>Downloadable resume PDF</h3>
+                            <p>Replace <code>resume.pdf</code> in the project folder to publish an updated resume.</p>
+                        </div>
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Preview PDF <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </section>
+
+                <section class="admin-panel" data-panel="projects">
+                    <div class="admin-section-heading">
+                        <div><h2>Projects</h2><p>Showcase your work with a clear description and project link.</p></div>
+                        <button class="button dark admin-add-button" type="button" data-add="projects">
+                            <i class="fa-solid fa-plus"></i> Add project
+                        </button>
+                    </div>
+                    <div class="admin-item-list" id="projectsList"></div>
+                </section>
+
+                <section class="admin-panel" data-panel="skills">
+                    <div class="admin-section-heading">
+                        <div><h2>Skills</h2><p>Keep your tools and technologies up to date.</p></div>
+                        <button class="button dark admin-add-button" type="button" data-add="skills">
+                            <i class="fa-solid fa-plus"></i> Add skill
+                        </button>
+                    </div>
+                    <div class="admin-item-list" id="skillsList"></div>
+                </section>
+
+                <section class="admin-panel" data-panel="journey">
+                    <div class="admin-section-heading">
+                        <div><h2>Education & goals</h2><p>Share what you are learning and where you are headed.</p></div>
+                        <button class="button dark admin-add-button" type="button" data-add="journey">
+                            <i class="fa-solid fa-plus"></i> Add entry
+                        </button>
+                    </div>
+                    <div class="admin-item-list" id="journeyList"></div>
+                </section>
+
+                <section class="admin-panel" data-panel="certifications">
+                    <div class="admin-section-heading">
+                        <div><h2>Certifications</h2><p>Manage course entries and the filename of each published PDF. Add PDF files to the project before linking them here.</p></div>
+                        <button class="button dark admin-add-button" type="button" data-add="certifications">
+                            <i class="fa-solid fa-plus"></i> Add certification
+                        </button>
+                    </div>
+                    <div class="admin-item-list" id="certificationsList"></div>
+                </section>
+
+                <section class="admin-panel" data-panel="strengths">
+                    <div class="admin-section-heading">
+                        <div><h2>Personal strengths</h2><p>Update the qualities visitors see in your about section.</p></div>
+                        <button class="button dark admin-add-button" type="button" data-add="strengths">
+                            <i class="fa-solid fa-plus"></i> Add strength
+                        </button>
+                    </div>
+                    <div class="admin-item-list" id="strengthsList"></div>
+                </section>
+
+                <section class="admin-panel" data-panel="socials">
+                    <div class="admin-section-heading">
+                        <div><h2>Social links</h2><p>Manage the social profiles linked from your website.</p></div>
+                        <button class="button dark admin-add-button" type="button" data-add="socials">
+                            <i class="fa-solid fa-plus"></i> Add social link
+                        </button>
+                    </div>
+                    <div class="admin-item-list" id="socialsList"></div>
+                </section>
+
+                <section class="admin-panel" data-panel="messages">
+                    <div class="admin-section-heading">
+                        <div><h2>Inbox</h2><p>Enquiries and chat messages are saved here. The inbox checks for new messages every 30 seconds.</p></div>
+                        <button class="button light admin-refresh-button" id="refreshMessages" type="button">
+                            <i class="fa-solid fa-rotate"></i> Refresh
+                        </button>
+                    </div>
+                    <div class="admin-message-list" id="messagesList"></div>
+                </section>
+
+                <section class="admin-panel" data-panel="feedback">
+                    <div class="admin-section-heading">
+                        <div><h2>Website feedback</h2><p>Visitor ratings and suggestions, all saved privately to your inbox.</p></div>
+                        <button class="button light admin-refresh-button" id="refreshFeedback" type="button">
+                            <i class="fa-solid fa-rotate"></i> Refresh
+                        </button>
+                    </div>
+                    <div class="feedback-summary-grid">
+                        <article class="admin-stat-card">
+                            <span>Average rating</span>
+                            <strong><span id="averageRating">—</span><small> / 5</small></strong>
+                            <i class="fa-regular fa-star"></i>
+                        </article>
+                        <article class="admin-stat-card">
+                            <span>Total feedback</span>
+                            <strong id="feedbackTotal">0</strong>
+                            <i class="fa-regular fa-comments"></i>
+                        </article>
+                    </div>
+                    <div class="admin-message-list" id="feedbackList"></div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="admin-dialog" id="itemDialog">
+        <form id="itemForm">
+            <div class="admin-dialog-heading">
+                <div><p class="section-label">PORTFOLIO CONTENT</p><h2 id="dialogTitle">Add item</h2></div>
+                <button class="admin-icon-button" type="button" id="closeDialog" aria-label="Close dialog">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="admin-dialog-fields" id="dialogFields"></div>
+            <div class="admin-dialog-actions">
+                <button class="button light" type="button" id="cancelDialog">Cancel</button>
+                <button class="button dark" type="submit">Save item <i class="fa-solid fa-check"></i></button>
+            </div>
+        </form>
+    </dialog>
+    <script src="admin.js?v=20261025"></script>
+</body>
+</html>

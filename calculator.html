@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Try Anuj Kumar's responsive calculator demo.">
+    <meta name="site-seo" content="dynamic">
+    <title>Calculator Demo | Anuj Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+</head>
+<body class="demo-page">
+<header class="navbar">
+    <a href="index.html#home" class="brand">
+        <span class="logo">A<span>K</span></span>
+        <strong>Anuj Kumar</strong>
+    </a>
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="button dark nav-cta" href="index.html#contact">
+        Let's Talk <i class="fa-solid fa-arrow-right"></i>
+    </a>
+    <button id="themeToggle" type="button" aria-pressed="false">🌙 Dark Mode</button>
+</header>
+
+<main class="tool-main">
+    <section class="tool-card calculator-card" aria-labelledby="calculatorTitle">
+        <a class="back-link" href="index.html#work">
+            <i class="fa-solid fa-arrow-left"></i> Back to projects
+        </a>
+        <p class="section-label">JAVASCRIPT PROJECT</p>
+        <h1 id="calculatorTitle">Calculator<span>.</span></h1>
+        <p class="tool-description">Use the buttons or your keyboard to calculate.</p>
+
+        <div class="calculator" aria-label="Calculator">
+            <output class="calculator-display" id="calculatorDisplay"
+                aria-live="polite" aria-atomic="true">0</output>
+            <div class="calculator-keys">
+                <button type="button" class="key key-utility" data-action="clear" aria-label="Clear">AC</button>
+                <button type="button" class="key key-utility" data-action="sign" aria-label="Change sign">+/-</button>
+                <button type="button" class="key key-utility" data-action="percent" aria-label="Percent">%</button>
+                <button type="button" class="key key-operator" data-action="divide" aria-label="Divide">÷</button>
+
+                <button type="button" class="key" data-number="7">7</button>
+                <button type="button" class="key" data-number="8">8</button>
+                <button type="button" class="key" data-number="9">9</button>
+                <button type="button" class="key key-operator" data-action="multiply" aria-label="Multiply">×</button>
+
+                <button type="button" class="key" data-number="4">4</button>
+                <button type="button" class="key" data-number="5">5</button>
+                <button type="button" class="key" data-number="6">6</button>
+                <button type="button" class="key key-operator" data-action="subtract" aria-label="Subtract">−</button>
+
+                <button type="button" class="key" data-number="1">1</button>
+                <button type="button" class="key" data-number="2">2</button>
+                <button type="button" class="key" data-number="3">3</button>
+                <button type="button" class="key key-operator" data-action="add" aria-label="Add">+</button>
+
+                <button type="button" class="key key-zero" data-number="0">0</button>
+                <button type="button" class="key" data-action="decimal" aria-label="Decimal point">.</button>
+                <button type="button" class="key key-equals" data-action="equals" aria-label="Equals">=</button>
+            </div>
+        </div>
+        <p class="keyboard-hint">Keyboard: 0–9, +, −, *, /, %, Enter, Backspace, Esc</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="index.html#home" class="footer-brand">AK. <span>Anuj Kumar</span></a>
+    <p>© <span id="year"></span> Anuj Kumar. Built with passion.</p>
+    <a href="index.html#work">Back to projects</a>
+    <a href="faq.html">FAQ</a>
+    <a href="privacy.html">Privacy</a>
+</footer>
+<script src="script.js"></script>
+<script src="calculator.js"></script>
+<script src="/analytics-config.js" defer></script>
+<script src="analytics.js" defer></script>
+</body>
+</html>

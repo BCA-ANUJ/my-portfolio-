@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anuj Kumar | Developer Portfolio</title>
+    <meta name="description" content="Explore Anuj Kumar's web development projects, skills and journey.">
+    <meta name="theme-color" content="#f8f9fc">
+    <meta name="site-seo" content="dynamic">
+
+    <link rel="stylesheet" href="style.css?v=20261025">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Programming icons -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@500;600&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="#home" class="brand">
+        <span class="logo">A<span>K</span></span>
+        <strong>Anuj Kumar</strong>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="button dark nav-cta" href="#contact">
+        Let's Talk <i class="fa-solid fa-arrow-right"></i>
+    </a>
+    
+    <button id="themeToggle" type="button" aria-pressed="false">🌙 Dark Mode</button>
+
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-decoration dots"></div>
+        <div class="hero-decoration circle"></div>
+        <div class="hero-decoration initials">AK</div>
+
+        <div class="hero-copy">
+            <p class="handwriting">Hello, I'm</p>
+
+            <h1>
+                <span class="outline-text" id="profileFirstName">ANUJ</span>
+                <span id="profileLastName">KUMAR</span>
+            </h1>
+
+            <p class="subtitle" id="profileHeadline">ASPIRING SOFTWARE DEVELOPER</p>
+            <p class="profile-location" id="profileLocation">HARYANA, INDIA</p>
+            <div class="blue-line"></div>
+
+            <p class="tagline" id="profileTagline">
+                Motivated BCA student building a strong foundation in programming,
+                computer applications and software development.
+            </p>
+
+            <div class="tech-icons" aria-label="Skills and technologies">
+                <i class="fa-brands fa-html5 html" title="HTML5"></i>
+                <i class="fa-brands fa-css3-alt css" title="CSS3"></i>
+                <i class="fa-brands fa-js js" title="JavaScript"></i>
+                <i class="fa-solid fa-file-word" title="MS Office"></i>
+                <i class="fa-solid fa-calculator" title="Tally & accounting"></i>
+            </div>
+
+            <a class="button dark work-button" href="#work">
+                View My Work <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="button resume-button" href="/resume.pdf" download="Anuj-Kumar-Resume.pdf">
+                <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+        </div>
+
+        <!-- Replace profile.png with your own portrait -->
+        <div class="portrait-wrap">
+            <div class="blue-circle"></div>
+
+            <div class="slash slash-one"></div>
+            <div class="slash slash-two"></div>
+
+            <img class="profile-image"
+                src="image anujkumar.png"
+                alt="Portrait of Anuj Kumar, aspiring software developer and BCA student">
+
+            <div class="scribble">〰</div>
+        </div>
+
+        <div class="social-bar" id="socialLinks" aria-label="Social media links">
+            <a href="https://github.com/BCA-ANUJ" target="_blank"
+                rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/anuj-kumar-395b92430" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://www.instagram.com/anuj_vlogger_50k?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank"
+                rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.youtube.com/" target="_blank"
+                rel="noopener noreferrer" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+
+        <a href="#work" class="scroll-hint">
+            <span class="mouse"></span>
+            <span>Scroll to explore</span>
+        </a>
+
+        <div class="bottom-rings"></div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects" id="work">
+        <div class="section-heading">
+            <p class="section-label">01 — MY WORK</p>
+            <h2>Selected Projects<span>.</span></h2>
+            <p class="section-description">Practical projects and front-end experiments as I grow my software development skills.</p>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+
+            <article class="project-card">
+                <div class="project-visual visual-one">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>01</span>
+                </div>
+                <p class="project-type">WEB DEVELOPMENT</p>
+                <h3>Personal Portfolio</h3>
+                <p>A personal website showcasing my profile and skills.</p>
+                <div class="project-footer">
+                    <span>HTML · CSS · JS</span>
+                    <a href="index.html#home" aria-label="Open personal portfolio">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-visual visual-two">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span>02</span>
+                </div>
+                <p class="project-type">JAVASCRIPT</p>
+                <h3>Calculator App</h3>
+                <p>A responsive calculator with keyboard and touch controls.</p>
+                <div class="project-footer">
+                    <span>HTML · CSS · JS</span>
+                    <a href="calculator.html" aria-label="Open calculator demo">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-visual visual-three">
+                    <i class="fa-solid fa-window-maximize"></i>
+                    <span>03</span>
+                </div>
+                <p class="project-type">UI DEVELOPMENT</p>
+                <h3>Login Page</h3>
+                <p>A responsive sign-in UI demo; authentication is not connected.</p>
+                <div class="project-footer">
+                    <span>HTML · CSS</span>
+                    <a href="login.html" aria-label="Open login page demo">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="section about-section" id="about">
+        <div class="about-copy">
+            <p class="section-label">02 — ABOUT ME</p>
+            <h2>Building my foundation in <span>software development.</span></h2>
+            <p class="about-objective" id="profileObjective">
+                Motivated and hardworking first-year BCA student with a strong interest in software
+                development and computer technology. Developing practical programming skills and
+                working towards a career as a professional software developer.
+            </p>
+            <div class="about-facts">
+                <article class="about-fact">
+                    <span><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+                    <div><strong>Currently pursuing</strong><p>BCA · First year</p></div>
+                </article>
+                <article class="about-fact">
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                    <div><strong>Based in</strong><p id="aboutLocation">Haryana, India</p></div>
+                </article>
+                <article class="about-fact">
+                    <span><i class="fa-solid fa-bullseye" aria-hidden="true"></i></span>
+                    <div><strong>Home state</strong><p id="homeLocation">Bihar, India</p></div>
+                </article>
+            </div>
+            <div class="about-strengths">
+                <h3>What I bring</h3>
+                <div class="strength-grid" id="strengthGrid">
+                    <span class="strength-chip">Self-motivated</span>
+                    <span class="strength-chip">Hardworking & dedicated</span>
+                    <span class="strength-chip">Quick learner</span>
+                    <span class="strength-chip">Positive attitude</span>
+                    <span class="strength-chip">Problem-solving mindset</span>
+                    <span class="strength-chip">Responsible & disciplined</span>
+                    <span class="strength-chip">Eager to learn</span>
+                </div>
+            </div>
+        </div>
+        <aside class="about-highlight">
+            <span class="about-highlight-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></span>
+            <p>MY APPROACH</p>
+            <h3>Learn. Build.<br>Keep improving.</h3>
+            <span>Growing real-world skills one project at a time.</span>
+            <a class="about-resume-link" href="/resume.pdf" download="Anuj-Kumar-Resume.pdf">
+                View my resume <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </aside>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+        <p class="section-label">03 — MY TOOLKIT</p>
+        <h2>Skills & Technologies<span>.</span></h2>
+        <p class="section-description">Tools from my coursework and programming foundations I am developing.</p>
+
+        <div class="skill-grid" id="skillGrid">
+            <div class="skill-item"><i class="fa-brands fa-html5 html"></i><span>HTML5</span></div>
+            <div class="skill-item"><i class="fa-brands fa-css3-alt css"></i><span>CSS3</span></div>
+            <div class="skill-item"><i class="fa-brands fa-js js"></i><span>JavaScript</span></div>
+            <div class="skill-item"><i class="fa-solid fa-code"></i><span>Basic programming concepts</span></div>
+            <div class="skill-item"><i class="fa-solid fa-file-word"></i><span>MS Office</span></div>
+            <div class="skill-item"><i class="fa-solid fa-file-lines"></i><span>Microsoft Word</span></div>
+            <div class="skill-item"><i class="fa-solid fa-table-cells-large"></i><span>Microsoft Excel</span></div>
+            <div class="skill-item"><i class="fa-solid fa-computer"></i><span>Internet & computer applications</span></div>
+            <div class="skill-item"><i class="fa-solid fa-calculator"></i><span>Tally & accounting</span></div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section experience-section" id="experience">
+        <p class="section-label">04 — MY JOURNEY</p>
+        <h2>Education & Goals<span>.</span></h2>
+
+        <div id="journeyList">
+        <div class="experience-card">
+            <div class="experience-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+                <span class="experience-date">CURRENTLY STUDYING</span>
+                <h3>Bachelor of Computer Applications</h3>
+                <p class="muted">Currently pursuing the first year of the Bachelor of Computer Applications.</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-icon">
+                <i class="fa-solid fa-school"></i>
+            </div>
+            <div>
+                <span class="experience-date">COMPLETED</span>
+                <h3>12th · Senior Secondary</h3>
+                <p>Gauri Shankar Secondary High School · Rohtas, Bihar</p>
+            </div>
+        </div>
+        <div class="experience-card">
+            <div class="experience-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+                <span class="experience-date">COMPLETED</span>
+                <h3>10th · Secondary</h3>
+                <p>Gauri Shankar Secondary High School · Rohtas, Bihar</p>
+            </div>
+        </div>
+        </div>
+        <div class="certification-section">
+            <div class="certification-heading">
+                <span class="experience-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></span>
+                <div>
+                    <p class="section-label">COURSES & CERTIFICATES</p>
+                    <h3>Certificates & training</h3>
+                </div>
+            </div>
+            <div class="certification-grid" id="certificationGrid">
+                <article class="certification-card">
+                    <i class="fa-solid fa-computer" aria-hidden="true"></i>
+                    <div class="certification-details">
+                        <span class="certification-name">ADCA — Advanced Diploma in Computer Applications</span>
+                        <small class="certification-issuer">ADCA</small>
+                    </div>
+                    <a class="certification-link" href="/certificate-kyp.pdf" target="_blank" rel="noopener noreferrer">View certificate <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+
+
+                </article>
+                <article class="certification-card">
+                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                    <div class="certification-details">
+                        <span class="certification-name">Tally & Accounting Certificate</span>
+                        <small class="certification-issuer">Tally & Accounting</small>
+                    </div>
+                    <a class="certification-link" href="/certificate-tally-accounting.pdf" target="_blank" rel="noopener noreferrer">View certificate <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </article>
+                <article class="certification-card">
+                    <i class="fa-solid fa-award" aria-hidden="true"></i>
+                    <div class="certification-details">
+                        <span class="certification-name">Kushal Yuva Program Certificate</span>
+                        <small class="certification-issuer">Kushal Yuva Program</small>
+                    </div>
+                </article>
+                <article class="certification-card">
+                    <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                    <div class="certification-details">
+                        <span class="certification-name">Design Thinking for Beginners</span>
+                    </div>
+                    <a class="certification-link" href="/certificate-design-thinking-beginners.pdf" target="_blank" rel="noopener noreferrer">View certificate <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </article>
+                <article class="certification-card">
+                    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                    <div class="certification-details">
+                        <span class="certification-name">Corporate AI Training Program</span>
+                        <small class="certification-issuer">Innovative AI Solutions</small>
+                    </div>
+                    <a class="certification-link" href="/certificate-corporate-ai-training-1.pdf" target="_blank" rel="noopener noreferrer">View certificate <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </article>
+                <article class="certification-card">
+                    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                    <div class="certification-details">
+                        <span class="certification-name">Prompt Engineering for Teams</span>
+                        <small class="certification-issuer">Innovative AI Solutions</small>
+                    </div>
+                    <a class="certification-link" href="/certificate-corporate-ai-training-3.pdf" target="_blank" rel="noopener noreferrer">View certificate <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+
+                </article>
+                
+                <article class="certification-card">
+                    <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                    <div class="certification-details">
+                        <span class="certification-name">Introduction to Generative AI Studio</span>
+                    </div>
+                    <a class="certification-link" href="/certificate-introduction-generative-ai-studio.pdf" target="_blank" rel="noopener noreferrer">View certificate <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <p class="section-label" id="contactEyebrow">05 — CONTACT</p>
+        <h2 id="contactTitle">Let's build something meaningful<span>.</span></h2>
+        <p id="contactDescription">Have an idea, project or opportunity? Send me a message.</p>
+            <a class="contact-email" id="contactEmail" href="mailto:anujpc2026@gmail.com">
+                anujpc2026@gmail.com
+        </a>
+        <form class="contact-form" id="contactForm">
+            <div class="contact-form-row">
+                <label>Name
+                    <input name="name" autocomplete="name" maxlength="100" required>
+                </label>
+                <label>Email
+                    <input name="email" type="email" autocomplete="email" maxlength="254" required>
+                </label>
+            </div>
+            <label>What would you like to discuss?
+                <select name="category" required>
+                    <option value="project">A project or freelance opportunity</option>
+                    <option value="collaboration">Working together</option>
+                    <option value="question">A question about my work</option>
+                    <option value="general">Something else</option>
+                </select>
+            </label>
+            <label>Subject
+                <input name="subject" maxlength="140" required>
+            </label>
+            <label>Message
+                <textarea name="message" rows="5" maxlength="4000" required></textarea>
+            </label>
+            <label class="contact-honeypot" aria-hidden="true">Website
+                <input name="website" tabindex="-1" autocomplete="off">
+            </label>
+            <div class="contact-submit-row">
+                <button class="button dark" type="submit">
+                    Send message <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <p class="contact-message" id="contactMessage" role="status" aria-live="polite"></p>
+            </div>
+        </form>
+        <div class="feedback-card">
+            <div class="feedback-intro">
+                <span class="feedback-icon"><i class="fa-regular fa-face-smile"></i></span>
+                <div>
+                    <h3>How was your visit?</h3>
+                    <p>Your honest feedback helps me make this portfolio better.</p>
+                </div>
+            </div>
+            <form class="feedback-form" id="feedbackForm">
+                <fieldset class="rating-fieldset">
+                    <legend>Choose a rating from 1 to 5 stars</legend>
+                    <div class="rating-options">
+                        <input id="rating5" name="rating" type="radio" value="5" required>
+                        <label for="rating5" aria-label="5 stars" title="Excellent">★</label>
+                        <input id="rating4" name="rating" type="radio" value="4">
+                        <label for="rating4" aria-label="4 stars" title="Very good">★</label>
+                        <input id="rating3" name="rating" type="radio" value="3">
+                        <label for="rating3" aria-label="3 stars" title="Good">★</label>
+                        <input id="rating2" name="rating" type="radio" value="2">
+                        <label for="rating2" aria-label="2 stars" title="Could be better">★</label>
+                        <input id="rating1" name="rating" type="radio" value="1">
+                        <label for="rating1" aria-label="1 star" title="Needs improvement">★</label>
+                    </div>
+                </fieldset>
+                <label for="feedbackNote">Anything you'd like me to improve? <span>(optional)</span>
+                    <textarea id="feedbackNote" name="message" rows="3" maxlength="2000"
+                        placeholder="Your thoughts are welcome..."></textarea>
+                </label>
+                <label for="feedbackName">Your name <span>(optional)</span>
+                    <input id="feedbackName" name="name" autocomplete="name" maxlength="100"
+                        placeholder="Leave blank to share anonymously">
+                </label>
+                <label class="contact-honeypot" aria-hidden="true">Website
+                    <input name="website" tabindex="-1" autocomplete="off">
+                </label>
+                <div class="contact-submit-row">
+                    <button class="button dark" type="submit">
+                        Send feedback <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <p class="contact-message" id="feedbackMessage" role="status" aria-live="polite"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <a href="#home" class="footer-brand">AK. <span>Anuj Kumar</span></a>
+    <p>© <span id="year"></span> Anuj Kumar. Built with passion.</p>
+    <a href="#home">Back to top ↑</a>
+    <a class="admin-footer-link" href="admin.html">Admin</a>
+    <a href="calculator.html">Calculator demo</a>
+    <a href="login.html">Login UI demo</a>
+    <a href="/resume.pdf" download="Anuj-Kumar-Resume.pdf">Download resume</a>
+    <a href="faq.html">FAQ</a>
+    <a href="privacy.html">Privacy</a>
+    <button class="privacy-settings-link" id="analyticsPreferences" type="button">Cookie preferences</button>
+</footer>
+
+<button class="chat-launcher" id="chatLauncher" type="button" aria-controls="chatPanel"
+    aria-expanded="false">
+    <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+    <span>Chat with me</span>
+</button>
+<section class="chat-panel" id="chatPanel" aria-labelledby="chatTitle" hidden>
+    <header class="chat-header">
+        <div class="chat-avatar" aria-hidden="true">AK</div>
+        <div><h2 id="chatTitle">Say hello</h2><p>Send me a message about anything.</p></div>
+        <button class="chat-close" id="chatClose" type="button" aria-label="Close chat">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+    </header>
+    <div class="chat-greeting">
+        <span>ANUJ</span>
+        <p>Hi there! Got a quick question or an idea? Leave me a message and I'll get back to you.</p>
+    </div>
+    <form class="chat-form" id="chatForm">
+        <label for="chatName">Your name <span>(optional)</span>
+            <input id="chatName" name="name" autocomplete="name" maxlength="100"
+                placeholder="What should I call you?">
+        </label>
+        <label for="chatEmail">Email so I can reply <span>(optional)</span>
+            <input id="chatEmail" name="email" type="email" autocomplete="email" maxlength="254"
+                placeholder="you@example.com">
+        </label>
+        <label for="chatText">Your message
+            <textarea id="chatText" name="message" rows="3" maxlength="2000"
+                placeholder="Write your message..." required></textarea>
+        </label>
+        <label class="contact-honeypot" aria-hidden="true">Website
+            <input name="website" tabindex="-1" autocomplete="off">
+        </label>
+        <button class="button dark" type="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="contact-message" id="chatMessage" role="status" aria-live="polite"></p>
+    </form>
+</section>
+<script src="script.js?v=20261025"></script>
+<script src="/analytics-config.js" defer></script>
+<script src="analytics.js" defer></script>
+</body>
+</html>
